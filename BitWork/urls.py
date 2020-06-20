@@ -19,6 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('Home.urls')),
+    path('seller/', include('sellerhome.urls')),
 ] 
 
 #Add URL maps to redirect the base URL to our application

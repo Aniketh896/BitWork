@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Home',
+    'sellerhome',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'BitWork.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'BitWork', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'BitWork', 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
