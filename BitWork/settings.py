@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'sellerhome',
+    'auth0login',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +103,25 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Auth0
+
+SOCIAL_AUTH_TRAILING_SLASH = False  # Remove trailing slash from routes
+SOCIAL_AUTH_AUTH0_DOMAIN = 'dev-k6wvivve.us.auth0.com'
+SOCIAL_AUTH_AUTH0_KEY = '08WH2htjhcOzfmHYhQOYF7N4SocJvqDl'
+SOCIAL_AUTH_AUTH0_SECRET = 'gNwxfmxeDrJhK1ZlDB_EwaHU8_FHs2zlLWa94RUuhdOhD41ibN5ut6LgngzOPw-N'
+SOCIAL_AUTH_AUTH0_SCOPE = [
+    'openid',
+    'profile',
+    'email'
+]
+
+AUTHENTICATION_BACKENDS = {
+    'auth0login.auth0backend.Auth0',
+    'django.contrib.auth.backends.ModelBackend'
+}
+
+LOGIN_URL = '/auth0'
+LOGIN_REDIRECT_URL = '/dashboard'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/

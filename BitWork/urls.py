@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('Home.urls')),
     path('seller/', include('sellerhome.urls')),
+    path('login/', include('auth0login.urls')),
 ] 
 
 #Add URL maps to redirect the base URL to our application
