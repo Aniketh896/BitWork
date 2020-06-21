@@ -10,14 +10,10 @@
       src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
     }
 
-    .main {
-    font-family:'Product Sans';
-    background: #c850c0;
-    background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
-    background: -o-linear-gradient(45deg, #4158d0, #c850c0);
-    background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
-    background: linear-gradient(45deg, #4158d0, #c850c0);
+.main1 {
+  background: #000000;
 }
+    
 
     .customClassForDropDown{
        height: 300px;
@@ -33,18 +29,99 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
 
+
+        <script src="https://drive.google.com/uc?export=view&id=15q-mWYdbxCvEsD9jC9bheIR-GPRg_DAK"></script>
+        <link href="https://drive.google.com/uc?export=view&id=1Uw6jraASLhHa-3M4RXA7qPKC0jRwsyy_" rel="stylesheet" />
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        
     
 </head>
 
 
-<body class="main">
+<body class="main main1">
 
 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+            <a href="/home">
+                {% if user.is_authenticated %}
+        <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+  <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+</svg>
+{% else %}
+
+<svg class="bi bi-unlock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+  <path fill-rule="evenodd" d="M8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+</svg>
+{% endif %}BitWork</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                          
+{% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="">Look&nbspfor&nbspClients</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/projectsubmit">Project&nbspSubmission</a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="">Active&nbspProjects</a>
+                </li>
+{% else %}
+
+            <li class="nav-item">
+              <a class="nav-link" href="">Explore&nbspMarketplace</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">Join&nbspas&nbspa&nbspFreelancer</a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="/newproject">Create&nbspa&nbspnew&nbspJob</a>
+                </li>
+
+            {% endif %}
+                    </ul>
+                </div>
+            </div>
+             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+{% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="/login/dashboard">Sign Out</a>
+                </li>
+{% else %}
+<li class="nav-item">
+                    <a class="nav-link active" href="/login">Sign In</a>
+                </li>
+                 {% endif %}
+            </ul>
+        </div>
+        </nav>
 
 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+{% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/home">
         
         {% if user.is_authenticated %}
@@ -113,7 +190,7 @@ BitWork</a>
                  {% endif %}
             </ul>
         </div>
-      </nav>
+      </nav> {% endcomment %}
 
       
     {% block page_content %}
