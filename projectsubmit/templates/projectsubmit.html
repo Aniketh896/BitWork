@@ -262,9 +262,30 @@ cursor: pointer;
             <input id="activity" type="text" name="activity" />
           </div>
                 </fieldset>
-        <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
-        </div>
+
+        <button type="button" id="submitbtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Submit Project
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Project Submitted Successfully ! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your Project has been successfully delivered to the client.
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-primary" data-dismiss="modal" onclick="pageRedirect()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
       </form>
     </div>
 <script >
@@ -275,6 +296,10 @@ cursor: pointer;
 	function calcNumbers(){
 		document.getElementByID("result").innerHTML = result;
 	}
+
+    function pageRedirect() {
+      window.location.href = "/home";
+    } 
 </script>
   </body>
 </html>
