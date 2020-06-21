@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'auth0login',
     'social_django',
     'projectsubmit',
+    'newproject',
 ]
 
 MIDDLEWARE = [
