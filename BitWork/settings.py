@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'sellerhome',
     'auth0login',
     'social_django',
+    'projectsubmit',
 ]
 
 MIDDLEWARE = [
