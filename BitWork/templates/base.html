@@ -33,32 +33,77 @@
 
 <body class="main">
 
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href=""><svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <a class="navbar-brand" href="">
+        
+        {% if user.is_authenticated %}
+        <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <rect width="11" height="9" x="2.5" y="7" rx="2"/>
   <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
-</svg> BitWork</a>
+</svg>
+{% else %}
+
+<svg class="bi bi-unlock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+  <path fill-rule="evenodd" d="M8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+</svg>
+{% endif %}
+
+BitWork</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            
+{% if user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="">Explore</a>
+              <a class="nav-link" href="">Look&nbspfor&nbspClients</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="/projectsubmit">Project&nbspSubmission</a>
             </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="">Active&nbspProjects</a>
+                </li>
+{% else %}
+
+            <li class="nav-item">
+              <a class="nav-link" href="">Explore&nbspMarketplace</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="">Join&nbspas&nbspa&nbspFreelancer</a>
             </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="">Place&nbspa&nbspRequest</a>
+                </li>
+
+            {% endif %}
+
+
+
           </ul>
         </div>
+
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
+{% if user.is_authenticated %}
                 <li class="nav-item">
+                    <a class="nav-link active" href="/login/dashboard">Sign Out</a>
+                </li>
+{% else %}
+<li class="nav-item">
                     <a class="nav-link active" href="/login">Sign In</a>
                 </li>
+                 {% endif %}
             </ul>
         </div>
       </nav>
