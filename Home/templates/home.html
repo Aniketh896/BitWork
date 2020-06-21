@@ -1,6 +1,344 @@
 {% extends 'base.html' %}
+{% block home_active %}
+active
+{% endblock home_active %}
 
 {% load static %}
 {% block page_content %}
+
+
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+	 <header class="header-one">
+      <div class="container">
+	   <div class="content">
+	   
+        <div class="row">
+		 <h1 class="name revealOnScroll" data-animation="fadeInDown"><i class="fa fa-coffee"></i>Bitwork</h1>
+		 <p class="temp">Finding a job made easier.</p>
+         <h1 class="hire revealOnScroll" data-animation="fadeInUp" data-timeout="400">Hire the best freelancers for your work.</h1>
+	     <div class="form-row">
+		  <div class="radio radio-left">
+		   <a href="signup.html">HIRE</a>		  
+		  </div>
+		  <div class="radio radio-right">
+		   <a href="signup.html">WORK</a>		  
+		  </div><!--./radio -->
+	 	 </div><!--./form-row -->
+        </div><!--./row -->
+		
+		<div class="row">
+		 <div class="col-lg-10 col-lg-offset-1 hidden-xs">
+		  <div class="logos">
+		   <img src="img/featured-logos.png" class="img-responsive" alt=""/>		  </div>
+		  <!--./logos -->
+		 </div>
+		 <!--./col-lg-10 -->
+		</div><!--./row --> 
+		
+       </div><!--./content -->
+	  </div><!--./container -->
+     </header><!--./header -->
+	 
+	 
+	 <!-- ==============================================
+	 Freelance Services Section
+	 =============================================== -->
+     <section id="services" class="services">
+	  <div class="container text-center">
+	  
+	   <div class="row">
+	    <div class="col-lg-12">
+		 <h3>Browse Freelance Services</h3>
+		 <hr class="mint">
+		 <p class="top-p">View over 30,000 available services by category.</p>
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html" class="hover">
+		   <div class="features one">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-code fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Web Development & IT</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Designer, Developer, Project Management, Front-End Developer.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		 </div><!-- /.col-lg-4 -->
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features two">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-eye fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Design, Art & Multimedia</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Design, Logo Design, Animation, Graphic Design, 3D, Adobe photoshop.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		 </div><!-- /.col-lg-4 -->
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features three">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Writing & Translation</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Content Writing, English Translation, Articles, SEO, Translation, Research.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		 </div><!-- /.col-lg-4 -->
+		  
+		 </div><!-- /.col-lg-12 -->
+		</div><!-- /.row -->
+		
+		<div class="row">
+		<div class="col-lg-12">
+		
+		  <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features four">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Admin Support</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Data Entry, English, Excel, Customer Service, Admin Support, Research, Email.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		 </div><!-- /.col-lg-4 -->
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features five">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-table fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Management & Finance</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Finance, Accounting, Tax Service, Payroll Manager, Book Keeper, Human Resource.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		 </div><!-- /.col-lg-4 -->
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features six">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Sales & Marketing</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Sales, Marketing, Lead Generation, Market Research, Leads.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		  </div><!-- /.col-lg-4 -->
+		  
+		 </div><!-- /.col-lg-12 -->
+		</div><!-- /.row -->
+		
+		<div class="row">
+		<div class="col-lg-12">
+		 
+		 
+		 <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features seven">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Engineering & Architecture</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Design, Architect, 3D, CAD, Engineering, Matlab, Electrical, Software.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		  </div><!-- /.col-lg-4 -->
+		 
+		  <div class="col-lg-4 col-md-4 col-sm-6">
+		  <a href="services.html">
+		   <div class="features eight">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-legal fa-stack-1x fa-inverse"></i>			
+			</span><!-- /span -->
+			<h4>Legal</h4>
+		   </div><!-- /.features -->
+		   <div class="spacer">
+			<p>Legal, Paralegal, Contracts, Drafting, Legal Advice, Patents, Federal Law.</p>
+			<p><b>Over 2,000 services</b></p>
+		   </div> <!-- /.spacer -->
+		  </a>		 
+		  </div><!-- /.col-lg-4 -->
+		  
+		 </div><!-- /.col-lg-12 -->
+		</div><!-- /.row -->
+
+	  </div><!-- /.container -->
+	 </section><!-- /section -->
+
+     <!-- ==============================================
+     Banner Section
+     =============================================== -->
+	 <section class="banner-comment">
+	  <div class="container">
+	   <h1>Best way to help world society is to develop a concrete framework for high paying jobs and individual skills enhancements.</h1>
+	  </div><!-- /container -->
+	 </section><!-- /section -->	  
+
+     <!-- ==============================================
+	 Stats Section
+	 =============================================== -->	
+	 <section id="stats" class="stats">
+	  <div class="container text-center">
+		
+	   <div class="row">
+				
+		<div class="col-lg-3 col-sm-6 pro">
+		 <h5>Clients</h5>
+		 <h1><span class="number-animator" data-value="505" data-animation-duration="800">0</span></h1>
+		  <div class="progress transparent progress-small no-radius">
+		   <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="45%" ></div>
+		  </div><!-- /.progress -->
+		</div><!-- /.col-lg-3 -->
+				
+		<div class="col-lg-3 col-sm-6 pro">
+		 <h5>Freelancers</h5>					
+		 <h1><span class="number-animator" data-value="4500" data-animation-duration="800">0</span></h1>
+		  <div class="progress transparent progress-small no-radius">
+		   <div class="progress-bar progress-bar-black animated-progress-bar " data-percentage="79%"></div>
+		  </div><!-- /.progress -->
+		</div><!-- /.col-lg-3 -->
+				
+		<div class="col-lg-3 col-sm-6 pro">
+		 <h5>Jobs Completed</h5>
+		 <h1><span class="number-animator" data-value="14000" data-animation-duration="800">0</span></h1>
+		  <div class="progress transparent progress-small no-radius">
+		   <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="85%"></div>
+		  </div><!-- /.progress -->
+		</div><!-- /.col-lg-3 -->
+
+	   	<div class="col-lg-3 col-sm-6 pro">
+		 <h5>Payed To Freelancers</h5>
+		 <h1><i class="fa fa-usd"></i><span class="number-animator" data-value="500K" data-animation-duration="800">0</span></h1>
+		  <div class="progress transparent progress-small no-radius">
+		   <div class="progress-bar progress-bar-black animated-progress-bar" data-percentage="85%"></div>
+		  </div><!-- /.progress -->
+		</div><!-- /.col-lg-3 -->
+				
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+     </section><!-- /section -->
+	  
+     <!-- ==============================================
+	 Testimonials Section
+	 =============================================== -->	
+     <div id="testimonials">
+	  <div class="container">  
+	   <div class="row">
+	   
+	   <h3>Testimonials</h3>
+	   <hr class="mint">
+	   
+		<div class="testimonials-slider">
+		 <ul class="slides">
+          <li>
+		   <p>The Kafe Template, is a powerful medium of expression and design in which its communications offers an infinite variety of perception, interpretation and execution.
+		   <span>John Doe</span></p>
+		  </li>
+		  <li>
+           <p>I m wondering why I never contacted these guys sooner! Seriously, they all have commendable talent in their respective field and knocked my concept out of the ballpark. Thanks for an amazing experience!
+		   <span>Segero, NoranicMeds</span></p>
+		  </li>
+		  <li>
+		   <p>I m wondering why I never contacted these guys sooner! Seriously, they all have commendable talent in their respective field and knocked my concept out of the ballpark. Thanks for an amazing experience!
+		   <span>Jane Doe</span></p>
+		  </li>
+         </ul><!-- /ul -->
+		</div><!-- /.testimonials-slider -->
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+     </div>
+     <!-- /section -->  
+	 
+     <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+	  <div class="container">
+	   <div class="row">
+	  
+	    <div class="col-md-4 col-sm-6 text-left">
+	     <h4 class="heading no-margin">About Us</h4>
+		 <hr class="mint">
+		 <p>The Kafe. Template is the Ultimate Freelance Marketplace Template for employers and freelancers to connect, collaborate, and get work done.</p>
+		 <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+	    </div><!-- /.col-md-4 -->
+	   
+	    <div class="col-md-2 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Company</h4>
+		 <hr class="mint">
+		 <div class ="no-padding">
+		  <a href="index.html">Home</a>
+		  <a href="about.html">About</a>
+		  <a href="jobs.html">Jobs</a>
+		  <a href="services.html">Freelancers</a>
+		  <a href="how-1.html">How it works</a>
+		  <a href="contact.html">Contact</a>		 
+		 </div>
+	    </div><!-- /.col-md-2 -->	
+		
+		<div class="col-md-3 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Other Services</h4>
+		 <hr class="mint">
+		 <div class="no-padding">
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Terms of Use</a>
+		  <a href="faq.html">FAQ</a>		 
+		 </div>
+	    </div><!-- /.col-md-3 -->	
+		
+	    <div class="col-md-3 col-sm-6 text-left">
+	    <h4 class="heading no-margin">Browse</h4>
+		<hr class="mint">
+		 <div class="no-padding">
+		   <a href="services.html">Top Freelancers this Month of June</a>
+		   <a href="services.html">Top Freelancers by Skill</a>
+		   <a href="services.html">Top Freelancers in India</a>
+		   <a href="services.html">Top Freelancers in UK</a>
+		   <a href="services.html">Top Freelancers in Australia</a>
+		   <a href="services.html">Top Freelancers in USA</a>		  
+		  </div>
+		 </div><!-- /.col-md-3 -->
+		 
+	    </div><!-- /.row -->
+	   <div class="clearfix"></div>
+	  </div><!-- /.container-->
+     </div><!-- /.footer -->			
+	 
 
 {% endblock page_content %}
