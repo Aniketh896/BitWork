@@ -6,7 +6,11 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "develop": "^1.0.0",
+    "truffle": "^5.1.31",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
   "devDependencies": {
     "web3": "^1.2.9",
     "webpack": "^4.43.0",
