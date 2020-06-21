@@ -122,7 +122,7 @@ AUTHENTICATION_BACKENDS = {
 }
 
 LOGIN_URL = '/auth0'
-LOGIN_REDIRECT_URL = '/dashboard'
+LOGIN_REDIRECT_URL = '/login/dashboard'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
