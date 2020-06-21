@@ -9,9 +9,16 @@
       font-weight: 400;
       src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
     }
+
     .main {
-      font-family:'Product Sans';
-    }
+    font-family:'Product Sans';
+    background: #c850c0;
+    background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+    background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+    background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+    background: linear-gradient(45deg, #4158d0, #c850c0);
+}
+
     .customClassForDropDown{
        height: 300px;
        overflow-y: auto;
@@ -38,7 +45,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/home">
         
         {% if user.is_authenticated %}
         <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
