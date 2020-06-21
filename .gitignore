@@ -5,6 +5,8 @@
 __pycache__
 db.sqlite3
 media
+lib/
+
 
 # Backup files # 
 *.bak 
@@ -28,3 +30,4 @@ bin
 !.vscode/extensions.json 
 .history
 
+node_modules
