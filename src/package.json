@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "develop": "^1.0.0",
-    "truffle": "^5.1.31",
+    "truffle": "^5.11.5",
     "truffle-hdwallet-provider": "^1.0.17"
   },
   "devDependencies": {
