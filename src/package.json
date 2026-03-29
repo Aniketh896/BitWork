@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "web3": "^1.2.9",
-    "webpack": "^4.43.0",
+    "webpack": "^5.105.4",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
